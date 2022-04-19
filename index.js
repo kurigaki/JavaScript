@@ -1,4 +1,4 @@
-window.addEventListener('load', function(){
+function pullDown() {
 
   const pullDownButton = document.getElementById("lists")
   const pullDownParents = document.getElementById("pull-down")
@@ -31,4 +31,6 @@ window.addEventListener('load', function(){
       currentList.innerHTML = value
     })
   })
-})
+}
+
+window.addEventListener('load', pullDown)
